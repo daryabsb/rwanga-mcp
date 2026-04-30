@@ -1,0 +1,42 @@
+{
+  "name": "rwanga-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Rwanga — Kurdish cinema preproduction platform",
+  "author": "Darya Ibrahim <daryabsb@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "rwanga-mcp": "./dist/index.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "rwanga",
+    "cinema",
+    "preproduction",
+    "kurdish",
+    "claude"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daryabsb/rwanga-mcp.git"
+  }
+}
